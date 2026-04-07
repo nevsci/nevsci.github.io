@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://alshedivat.github.io/nevsci.github.io/sitemap.xml
+Sitemap: https://nevsci.github.io/sitemap.xml
