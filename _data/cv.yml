@@ -33,11 +33,20 @@ cv:
         score: ""
         courses: ""
         highlights:
-          - Design of new photochemical reactions
-          - Elucidation of reaction mechanism with the help of mechanistic probes and spectroscopic methods
-          - Supervision of students' thesis and project modules 
+          - Doctoral Thesis: Generating Molecular Complexity via Photocatalysis: From Mechanism to Design and Application
+          - Member and scholarship recipient from the program Cells in Motion of the International Max Planck Research School 
 
-      - institution: Eidgenössische Technische Hochschule
+      - institution: University of Chemistry and Technology in Prague
+        location: Prague, Czechia
+        area: Physics
+        studyType: Federal teaching diploma
+        start_date: 1896
+        end_date: 1900
+        highlights:
+          - Description 1.
+          - Description 2.
+          
+     - institution: University of Chemistry and Technology in Prague
         location: Zurich, Switzerland
         area: Physics
         studyType: Federal teaching diploma
@@ -46,6 +55,7 @@ cv:
         highlights:
           - Description 1.
           - Description 2.
+
 
     Experience:
       - company: Institute for Advanced Study, Princeton University
