@@ -1,10 +1,10 @@
 cv:
-  name: Albert Einstein
+  name: Tomáš Neveselý
   label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  email: 
+  location: Berlin, Germany
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: A Czech-born and mostly German-educated chemist, with abilities ranging from synthethic chemistry through spectroscopy to quantum chemical calculations to tackle all the (photo)chemical challanges.
 
   social_networks:
     - network: X
@@ -14,27 +14,28 @@ cv:
     - network: LinkedIn
       username: example
 
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+  address: ""
+    street: 
+    city: 
+    region: 
+    postalCode: 
+    countryCode: 
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
+      - institution: University of Münster
+        location: Münster, Germany
+        url: https://www.uni-muenster.de/
+        area: Photocatalysis
         studyType: PhD
-        start_date: 1900
-        end_date: 1905
+        start_date: 10/2018
+        end_date: 03/2022
         score: ""
-        courses: "Theory of Relativity"
+        courses: ""
         highlights:
-          - Description 1.
-          - Description 2.
+          - Design of new photochemical reactions
+          - Elucidation of reaction mechanism with the help of mechanistic probes and spectroscopic methods
+          - Supervision of students' thesis and project modules 
 
       - institution: Eidgenössische Technische Hochschule
         location: Zurich, Switzerland
