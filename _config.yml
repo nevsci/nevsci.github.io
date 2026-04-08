@@ -21,7 +21,7 @@ title                    : "Tomovo"
 title_separator          : "-"
 subtitle                 : "jenom Tomovo" # site tagline that appears below site title in masthead
 name                     : "Tomáš"
-description              : "An amazing website, phenomenal even."
+description              : "An amazing website, phenomenal even. But still in progress."
 url                      : "https://nevsci.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
