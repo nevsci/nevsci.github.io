@@ -1,9 +1,9 @@
 cv:
   name: Tomáš Neveselý
   label: Scientist
-  email: ""
+  email: a@b.com
   location: Berlin, Germany
-  image: ""
+  image:
   summary: A Czech-born and mostly German-educated chemist, with abilities ranging from synthethic chemistry through spectroscopy to quantum chemical calculations to tackle all the (photo)chemical challanges.
 
   social_networks:
@@ -14,12 +14,12 @@ cv:
     - network: LinkedIn
       username: example
 
-  address: ""
-    street: 
-    city: 
-    region: 
-    postalCode: 
-    countryCode: 
+  address:
+    street:
+    city:
+    region:
+    postalCode:
+    countryCode:
 
   sections:
     Education:
