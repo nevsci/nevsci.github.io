@@ -27,8 +27,8 @@ latest_posts:
 
 Hi, I’m Tomáš Neveselý.
 
-I am a  researcher in organic photochemistry and related areas.
+I am a researcher in organic photochemistry and related areas.
 
-This page is currently under construction but for now you can find at least my CV and publications. 
+This page is currently under construction but for now you can find at least my CV and publications.
 
-The best way to reach me is via email or the contact form bellow. 
+The best way to reach me is via email or the contact form bellow.
