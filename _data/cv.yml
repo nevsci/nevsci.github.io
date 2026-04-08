@@ -30,8 +30,8 @@ cv:
         studyType: PhD
         start_date: 10/2018
         end_date: 03/2022
-        score: ""
-        courses: ""
+        score:
+        courses:
         highlights:
           - Doctoral Thesis: Generating Molecular Complexity via Photocatalysis: From Mechanism to Design and Application
           - Member and scholarship recipient from the program Cells in Motion of the International Max Planck Research School 
