@@ -1,2 +1,5 @@
 cv:
- name: John Hoe
+  cv:
+    name: Tomáš Neveselý
+    label: Dr
+    email: your@mom.com
