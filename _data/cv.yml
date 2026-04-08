@@ -1,9 +1,9 @@
 cv:
   name: Tomáš Neveselý
   label: Scientist
-  email: a@b.com
+  email: ""
   location: Berlin, Germany
-  image:
+  image: ""
   summary: A Czech-born and mostly German-educated chemist, with abilities ranging from synthethic chemistry through spectroscopy to quantum chemical calculations to tackle all the (photo)chemical challanges.
 
   social_networks:
@@ -14,7 +14,7 @@ cv:
     - network: LinkedIn
       username: example
 
-  address:
+  address: ""
     street:
     city:
     region:
@@ -28,12 +28,12 @@ cv:
         url: https://www.uni-muenster.de/
         area: Photocatalysis
         studyType: PhD
-        start_date: 10/2018
-        end_date: 03/2022
-        score:
-        courses:
-        highlights:
-          - Doctoral Thesis: Generating Molecular Complexity via Photocatalysis: From Mechanism to Design and Application
+        start_date: "10/2018"
+        end_date: "03/2022"
+        score: ""
+        courses: ""
+        highlights: ""
+          - Doctoral Thesis: "Generating Molecular Complexity via Photocatalysis: From Mechanism to Design and Application"
           - Member and scholarship recipient from the program Cells in Motion of the International Max Planck Research School 
 
       - institution: University of Chemistry and Technology in Prague
