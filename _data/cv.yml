@@ -1,4 +1,25 @@
 cv:
-    name: Tomáš Neveselý
-    label: Dr
-    email: your@mom.com
+  name: Tomáš Neveselý
+  email: your@email.com
+  # phone: "+420 123 456 789"
+  # website: https://nevsci.github.io
+  # location: Prague, Czech Republic
+  sections:
+    Education:
+      - institution: Your University
+        area: Your Field
+        degree: Dr.
+        start_date: "2018"
+        end_date: "2023"
+        highlights:
+          - "Your thesis or achievement"
+    Experience:
+      - company: Your Organization
+        position: Researcher
+        start_date: "2023"
+        end_date: present
+        highlights:
+          - "went for a good lunch"
+    Skills:
+      - label: Programming
+        details: Python, R, MATLAB
