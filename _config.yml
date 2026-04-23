@@ -22,6 +22,7 @@ author: Some Tomáš
 navbar-links:
   About Me: "aboutme"
   Publications: "publications"
+  Downloads: "downloads"
   Blog: "blog"
   #Resources:    - Beautiful Jekyll: "https://beautifuljekyll.com"
   #  - Learn markdown: "https://www.markdowntutorial.com/"
