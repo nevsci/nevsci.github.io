@@ -22,8 +22,6 @@ author: Some Tomáš
 navbar-links:
   About Me: "aboutme"
   Publications: "publications"
-  navbar-links:
-  About: ""
   Blog: "blog"
   #Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
