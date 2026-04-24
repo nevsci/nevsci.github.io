@@ -4,37 +4,43 @@ title: Publications
 ---
 ## The size of my ... _academic record_
 
-<ul class="list-unstyled">
-{% for pub in site.data.publications %}
-  <li style="margin-bottom: 2em;">
+{% assign pubs_by_year = site.data.publications | group_by_exp: "pub", "pub.journal | split: ' ' | slice: 1, 1 | first" | sort: "name" | reverse %}
 
-    <strong>{{ pub.title }}</strong><br>
-    {{ pub.authors }}<br>
-    <em>{{ pub.journal }}</em><br>
+{% for year in pubs_by_year %}
+  <h3>{{ year.name }}</h3>
 
-    <div style="margin-top: 0.4em;">
+  <ul class="list-unstyled">
+    {% for pub in year.items %}
+      <li style="margin-bottom: 2em;">
 
-      {% if pub.doi %}
-        <a href="{{ pub.doi }}">🔗 DOI</a>
-      {% endif %}
+        <strong>{{ pub.title }}</strong><br>
+        {{ pub.authors }}<br>
+        <em>{{ pub.journal }}</em><br>
 
-      {% if pub.pdf %}
-        {% if pub.doi %} | {% endif %}
-        <a href="{{ '/assets/files/' | append: pub.pdf | relative_url }}">📄 PDF</a>
-      {% endif %}
+        <div style="margin-top: 0.4em;">
 
-      {% if pub.code %}
-        {% if pub.doi or pub.pdf %} | {% endif %}
-        <a href="{{ '/assets/files/' | append: pub.code | relative_url }}">💻 Code</a>
-      {% endif %}
+          {% if pub.doi %}
+            <a href="{{ pub.doi }}">🔗 DOI</a>
+          {% endif %}
 
-      {% if pub.citations %}
-        {% if pub.doi or pub.pdf or pub.code %} | {% endif %}
-        Citations: {{ pub.citations }}
-      {% endif %}
+          {% if pub.pdf %}
+            {% if pub.doi %} | {% endif %}
+            <a href="{{ '/assets/files/' | append: pub.pdf | relative_url }}">📄 PDF</a>
+          {% endif %}
 
-    </div>
+          {% if pub.code %}
+            {% if pub.doi or pub.pdf %} | {% endif %}
+            <a href="{{ '/assets/files/' | append: pub.code | relative_url }}">💻 Code</a>
+          {% endif %}
 
-  </li>
+          {% if pub.citations %}
+            {% if pub.doi or pub.pdf or pub.code %} | {% endif %}
+            Citations: {{ pub.citations }}
+          {% endif %}
+
+        </div>
+
+      </li>
+    {% endfor %}
+  </ul>
 {% endfor %}
-</ul>
