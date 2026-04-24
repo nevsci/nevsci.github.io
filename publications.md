@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Publications
+permalink: /publications/
 ---
 ## The size of my ... _academic record_
 
