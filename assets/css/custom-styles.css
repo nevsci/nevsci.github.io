@@ -3,3 +3,8 @@ main .container,
 footer .container {
   max-width: 1400px;
 }
+
+body {
+  font-size: 18px;
+  line-height: 1.7;
+}
