@@ -6,3 +6,20 @@ body {
   font-size: 18px;
   line-height: 1.7;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
+.project-image {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.publication-entry {
+  margin-bottom: 2.5rem;
+}
+
+# Navbar settings
+.navbar-custom .navbar-nav .nav-link {
+  font-size: 14px;
+}
