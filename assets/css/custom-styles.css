@@ -2,7 +2,7 @@
 ---
 
 .container-md, .container-lg, .container {
-  max-width: 1900px;
+  max-width: 1900px !important;
 }
 
 body {
@@ -27,13 +27,57 @@ a:hover {
   font-size: 14px;
 }
 
-body {
-  font-family: 'IBM Plex Serif', serif !important;
+/* ===== Global font control ===== */
+
+/* Main body text */
+body,
+p,
+li,
+td,
+th,
+blockquote,
+.post-entry,
+.post-meta,
+.post-subtitle,
+.page-subheading {
+  font-family: 'IBM Plex Serif', serif;
 }
 
+/* Headings + titles */
 h1, h2, h3, h4, h5, h6,
+.page-heading,
+.post-heading,
+.post-title,
+.navbar-brand {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Navigation bar */
 .navbar-custom,
-.navbar-brand,
-.navbar-nav {
-  font-family: 'IBM Plex Sans', sans-serif !important;
+.navbar-custom .nav-link,
+.navbar-custom .navbar-nav,
+.navbar-custom .dropdown-menu,
+.navbar-custom .dropdown-item {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Footer */
+footer,
+footer p,
+footer a,
+footer .copyright {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Buttons + pagination */
+.btn,
+.pagination,
+.page-link {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Code blocks (optional, nicer monospace) */
+code,
+pre {
+  font-family: 'JetBrains Mono', monospace;
 }
