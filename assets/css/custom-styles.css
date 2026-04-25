@@ -1,3 +1,7 @@
+.container-md, .container-lg, .container {
+  max-width: 1400px;
+}
+
 .intro-header .container,
 main .container,
 footer .container {
