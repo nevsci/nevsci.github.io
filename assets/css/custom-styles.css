@@ -2,13 +2,7 @@
   max-width: 1400px;
 }
 
-.intro-header .container,
-main .container,
-footer .container {
-  max-width: 1800px;
-}
-
 body {
-  font-size: 18px;
+  font-size: 40px;
   line-height: 1.7;
 }
