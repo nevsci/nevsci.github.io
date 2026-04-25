@@ -24,6 +24,13 @@ a:hover {
   font-size: 14px;
 }
 
-:root {
-  --body-font: 'IBM Plex Serif', serif;
-  --header-font: 'IBM Plex Sans', sans-serif;
+body {
+  font-family: 'IBM Plex Serif', serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-custom,
+.navbar-brand,
+.navbar-nav {
+  font-family: 'IBM Plex Sans', sans-serif !important;
+}
