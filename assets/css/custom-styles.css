@@ -23,3 +23,7 @@ a:hover {
 .navbar-custom .navbar-nav .nav-link {
   font-size: 14px;
 }
+
+:root {
+  --body-font: 'IBM Plex Serif', serif;
+  --header-font: 'IBM Plex Sans', sans-serif;
