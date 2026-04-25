@@ -140,23 +140,33 @@ navbar-var-length: false
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-page-col: "#FBFAF7"
-text-col: "#2C2C2C"
+page-col: "#F7F4EE"
+text-col: "#2B2B2B"
+link-col: "#2F5D62"
+hover-col: "#163A40"
+navbar-col: "#D9D0C3"
+navbar-text-col: "#2B2B2B"
+navbar-border-col: "#BFB4A5"
+footer-col: "#D9D0C3"
+footer-text-col: "#5E564D"
+footer-link-col: "#2B2B2B"
+footer-hover-col: "#163A40"
 
-link-col: "#3E5F4A"
-hover-col: "#2B4534"
 
-navbar-col: "#E6E1D8"
-navbar-text-col: "#2C2C2C"
-navbar-border-col: "#D0C9BC"
-
-footer-col: "#E6E1D8"
-footer-text-col: "#676056"
-footer-link-col: "#2C2C2C"
-footer-hover-col: "#2B4534"
+#Stronger accents
+#page-col: "#FBFAF7"
+#text-col: "#2C2C2C"
+#link-col: "#3E5F4A"
+#hover-col: "#2B4534"
+#navbar-col: "#E6E1D8"
+#navbar-text-col: "#2C2C2C"
+#navbar-border-col: "#D0C9BC"
+#footer-col: "#E6E1D8"
+#footer-text-col: "#676056"
+#footer-link-col: "#2C2C2C"
+#footer-hover-col: "#2B4534"
 
 #original palette
-
 #page-col: "#FFFFFF"
 #text-col: "#404040"
 #link-col: "#008AFF"
