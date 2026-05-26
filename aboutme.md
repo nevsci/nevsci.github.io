@@ -23,9 +23,9 @@ What else do you need?
 
 - **2023–2026:** Postdoctoral Researcher, Humboldt-Universität zu Berlin  
   *Group of Prof. Stefan Hecht*  
-  &nbsp;&nbsp;• Developement of novel spiropyran-based photoswitching systems for Xolography and broader applications  
-  &nbsp;&nbsp;• Expansion of the spiropyran chemical space using machine learning 
-  &nbsp;&nbsp;• Preparation and contribution to grant applications 
+  - Developement of novel spiropyran-based photoswitching systems for Xolography and broader applications  
+  - Expansion of the spiropyran chemical space using machine learning 
+  - Preparation and contribution to grant applications 
 
 - **2022–2023:** Postdoctoral Researcher, Universität Münster  
   *Group of Prof. Ryan Gilmour*  
