@@ -17,7 +17,7 @@
 }
 
 body {
-  font-size: 40px;
+  font-size: 18px;
   line-height: 1.7;
 }
 
@@ -32,6 +32,20 @@ a:hover {
 .publication-entry {
   margin-bottom: 2.5rem;
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px; /* Smaller font for mobile */
+  }
+  .main-content {
+    max-width: 100%;   /* Make text column wider on small screens */
+    padding: 0 10px;   /* Optional: small horizontal padding */
+  }
+}
+
+
+
+
 
 /* Navbar settings */
 .navbar-custom .navbar-nav .nav-link {
