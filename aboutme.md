@@ -15,10 +15,7 @@ What else do you need?
 ... is a still work in progress. And for now I will be adding some basic information about me and useful projects I worked on over the last years. There will also be parts unrelated to my (photo)chemical career. 
 
 
-Copilot said: Absolutely! Jekyll pages use Markdown (.md) for
 
-Absolutely! Jekyll pages use Markdown (.md) for content formatting, which is easy to read and looks good on your webpage. Here’s a well-structured Markdown snippet ready to be added to your aboutme.md. You can just copy and paste this under the appropriate spot in your file:
-Markdown
 
 ---
 
