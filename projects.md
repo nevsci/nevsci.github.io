@@ -22,6 +22,8 @@ I decided to make my own design. The biggest contributing factor being the speed
 ...
 </details>
 
+
+
 ### Software related tools
 
 <details class="project" markdown="1">
@@ -29,6 +31,8 @@ I decided to make my own design. The biggest contributing factor being the speed
 
 ...
 </details>
+
+
 
 ### Teaching and mentoring
 
