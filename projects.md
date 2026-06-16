@@ -17,16 +17,16 @@ I decided to make my own design. The biggest contributing factor being the speed
 I designed the reactor to use 4 star LED modules which are attached using heat conductive double sidded tape on an aluminium heatsink. The modules used were typically around 1 W each, but the heatsink in the combination with a small fan could probably handle at least 2x or 3x as much. The cooling is provided by a bottom mounted fan 
 
 BOM:
-3D printed parts (Download the files [here](../assets/files/Photoreactor_STL.rar)!)
-60 mm fan
-4 x M4*30 mm screw
-4 x LED module (star)
-Aluminium heatsink (43 mm or 50 mm)
-Buck convertor (for example XL4015 based)
-Double sided tape - heat conductive
-Some wire and a soldering iron
+1. 3D printed parts (Download the files [here](../assets/files/Photoreactor_STL.rar)!)
+2. 60 mm fan
+3. 4 x M4*30 mm screw
+4. 4 x LED module (star)
+5. Aluminium heatsink (43 mm or 50 mm)
+6. Buck convertor (for example XL4015 based)
+7. Double sided tape - heat conductive
+8. Some wire and a soldering iron
 
-_Instructions_
+**Instructions**
 
 
 ![The 3D printed photoreactor overview](/assets/img/photoreactor/Photoreactor.png "3D printed photoreactor")
