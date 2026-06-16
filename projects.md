@@ -26,3 +26,38 @@ Content of project A.
 Content of project B.
 
 </details>
+
+
+# Projects
+
+A selection of research, software, and teaching-related projects.
+
+## Research projects
+
+<details class="project" markdown="1">
+<summary><strong>Mechanism-guided photochemistry</strong></summary>
+
+...
+</details>
+
+<details class="project" markdown="1">
+<summary><strong>Photoswitch design and spectroscopy</strong></summary>
+
+...
+</details>
+
+## Software and tools
+
+<details class="project" markdown="1">
+<summary><strong>RybaGUI — ORCA input generator</strong></summary>
+
+...
+</details>
+
+## Teaching and mentoring
+
+<details class="project" markdown="1">
+<summary><strong>Quantum chemistry teaching material</strong></summary>
+
+...
+</details>
