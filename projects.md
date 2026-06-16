@@ -5,7 +5,7 @@ subtitle: Small tools, useful ideas, and stories not only from the lab
 permalink: /projects/
 ---
 
-## Research projects
+### Tools and devices (mostly 3D printed)
 
 <details class="project" markdown="1">
 <summary><strong>Small modular photoreactor</strong></summary>
@@ -17,12 +17,12 @@ I decided to make my own design. The biggest contributing factor being the speed
 </details>
 
 <details class="project" markdown="1">
-<summary><strong>Photoswitch design and spectroscopy</strong></summary>
+<summary><strong>Stand for NMR tubes</strong></summary>
 
 ...
 </details>
 
-## Software and tools
+### Software related tools
 
 <details class="project" markdown="1">
 <summary><strong>RybaGUI — ORCA input generator</strong></summary>
@@ -30,10 +30,11 @@ I decided to make my own design. The biggest contributing factor being the speed
 ...
 </details>
 
-## Teaching and mentoring
+### Teaching and mentoring
 
 <details class="project" markdown="1">
 <summary><strong>Quantum chemistry teaching material</strong></summary>
 
 ...
 </details>
+D 
