@@ -17,6 +17,8 @@ I decided to make my own design. The biggest contributing factor being the speed
 
 ![The 3D printed photoreactor overview](/assets/img/photoreactor/Photoreactor.png "3D printed photoreactor")
 
+Download the files [here](../assets/files/Photoreactor_STL.rar)!
+
 </details>
 
 <details class="project" markdown="1">
