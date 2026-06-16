@@ -16,18 +16,19 @@ I decided to make my own design. The biggest contributing factor being the speed
 
 I designed the reactor to use 4 star LED modules which are attached using heat conductive double sidded tape on an aluminium heatsink. The modules used were typically around 1 W each, but the heatsink in the combination with a small fan could probably handle at least 2x or 3x as much. The cooling is provided by a bottom mounted fan 
 
-BOM:
+**BOM:**  
 3D printed parts (Download the files [here](../assets/files/Photoreactor_STL.rar)!)  
-60 mm fan  
+60 mm fan (12 or 24 V, depending on the power supply)
 4 x M4*30 mm screw  
 4 x LED module (star)  
 Aluminium heatsink (43 mm or 50 mm)  
-Buck convertor (for example XL4015 based)  
+Buck converter (for example XL4015 based)  
+Power adapter 12 - 24 V (Even old laptop charger or similar will be sufficient)
 Double sided tape - heat conductive  
 Some wire and a soldering iron  
 
 **Instructions**
-
+The most important part is to attach LEDS symmetrically so all the vials are getting the same ammount of light. In my case I put the LEDs in a way that the actual light emmiting parts were on a square with a side length of 24 mm or in the case of my 43 mm heatsink, the LED modules in the example bellow were 5mm of the edge of the heatsink. Afterwards, everythink needs to be soldered. Typically, there cheap buck converters will be current limmited, therefore solder the LEDs in series Or two in series and make paralel pairs. The total current must be lower than the limit of the buck converter and just as well the required voltage must be lower than what the puwer supply can provide. Measue the current and set the potentiometer to an appropriate value. The screws in this build act as a stand off for the fan to provide cooling of the LEDs and the air flow through the reactor is sufficient enough to cool the reaction vessels as well. The fan can be connected in front of the buck convertor, directly to the power supply.
 
 ![The 3D printed photoreactor overview](/assets/img/photoreactor/Photoreactor.png "3D printed photoreactor")
 
