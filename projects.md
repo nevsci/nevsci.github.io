@@ -39,7 +39,7 @@ The most important part is to attach LEDS symmetrically so all the vials are get
 <details class="project" markdown="1">
 <summary><strong>Stand for NMR tubes</strong></summary>
 
-...
+![The 3D NMR tube stand doubling as a RBF stand](assets/img/NMRStand/Stand.jpg "NMR tube stand")assets/img/NMRStand
 </details>
 
 
