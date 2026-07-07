@@ -39,6 +39,8 @@ The most important part is to attach LEDS symmetrically so all the vials are get
 <details class="project" markdown="1">
 <summary><strong>Stand for NMR tubes</strong></summary>
 
+This stand was designed to hold 12 NMR tubes (5 mm diameter) and if turned upside down it can hold a flask. It is useful for round bottom or pear-shaped flask of volumes from 10 to 100 mL. The top part can be used to imprint some text like name as you can see from included photos. (Download the STL file [here](../assets/files/NMRStand/Stand.stl)!)  
+It wroks well if its printed from PLA, but I would recommend TPU for extra grip. Especially if you would like to use it to hold flasks as well. However, these materials are not particularly solvent resistant and if you wish to have a stand resiliant even to the clumsier of hands, print it from PP filament.
 ![The 3D NMR tube stand doubling as a RBF stand](assets/img/NMRStand/Stand.jpg "NMR tube stand")assets/img/NMRStand
 </details>
 
