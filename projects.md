@@ -50,7 +50,8 @@ It wroks well if its printed from PLA, but I would recommend TPU for extra grip.
 <summary><strong>3D printable beakers and flask made from polypropylene</strong></summary>
 
 This is currently work in progress. Polypropylene is rather resilient polymer which can be 3D printable. This could give us option to print custom chemical labware, parts or reactors. 
-![3D printed beaker from PP](assets/img/PP_labware/Beaker.jpeg "Beaker from PP") {: style="width: 50%; height: auto;" }
+![3D printed beaker from PP](assets/img/PP_labware/Beaker.jpeg "Beaker from PP")
+{: style="width: 50%; height: auto;" }
 </details>
 
 
