@@ -55,6 +55,7 @@ This is currently work in progress. Polypropylene is rather resilient polymer wh
   alt="3D printed beaker from PP"
   title="Beaker from PP"
   style="display: block; width: 100%; max-width: 500px; height: auto; margin: 1rem auto;">
+  
   </details>
 
 
