@@ -6,5 +6,4 @@ permalink: /downloads/
 
 ## Downloads
 
-### CV
-[Download my CV](../assets/files/cv.pdf)
+All the materials can be currently downloaded at their corresponding place on other part of this website. For now this page is a placeholder for future. 
