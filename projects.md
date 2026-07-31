@@ -52,6 +52,11 @@ It wroks well if its printed from PLA, but I would recommend TPU for extra grip.
 <details class="project" markdown="1">
 <summary><strong>RybaGUI — ORCA input generator</strong></summary>
 
+During my time in academia I was putting emphasis on the fact that even a synthetic chemist who knows the fume hood the most can still do calculations and obtain very good insight into the chemical reactivity or calculate spectra to help with the analysis of the molecule. One of the hurdles facing many students when they start with calculations is the intimidation of the command line style input. For this reason I decided to create simple utility to help create inputs for ORCA. It is a html based script to which one can add coordinate and then through a several drop menus select an appropriate input for the calculations. Type of the job, level of theory, basis set, solvent and so on. 
+
+This is still version work in progress and feedback is welcomed. 
+(Download the file [here](../assets/files/Ryba_093.html)!)  
+
 ...
 </details>
 
