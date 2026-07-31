@@ -3,7 +3,7 @@ layout: page
 title: Publications
 permalink: /publications/
 ---
-## The size of my ... _academic record_
+## The short list of results from the long hours in the lab
 
 <ul class="list-unstyled">
 {% for pub in site.data.publications %}
