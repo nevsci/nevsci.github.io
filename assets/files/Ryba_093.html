@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ryba GUI for ORCA by Tomáš Neveselý</title>
+<style>
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 20px;
+  }
+  h1 {
+    color: #76c7c0; text-align: center;
+  }
+  label {
+    display: block; margin: 10px 0 5px 0; font-weight: bold;
+  }
+  select, input[type="number"], input[type="file"], input[type="text"], textarea {
+    width: 100%; padding: 8px;
+    background-color: #222; color: #eee;
+    border: 1px solid #444; border-radius: 4px;
+    box-sizing: border-box; margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  textarea {
+    font-family: 'Courier New', monospace;
+    min-height: 150px; resize: vertical;
+  }
+  option {
+    background-color: #121212;
+  }
+  button {
+    background-color: #76c7c0; color: black;
+    border: none; padding: 10px 20px;
+    font-size: 1rem; border-radius: 4px;
+    cursor: pointer; margin-top: 10px; width: 100%;
+  }
+  button:hover {
+    background-color: #5aa9a4;
+  }
+  .container {
+    max-width: 700px; margin: 0 auto;
+  }
+  .description {
+    font-size: 0.9rem; color: #999; margin-bottom: 15px;
+  }
+  .section {
+    margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #333;
+  }
+  .inline-flex {
+    display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap;
+  }
+  .inline-flex > * {
+    flex: 1 1 45%;
+  }
+  #compoundJobContainer {
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 6px;
+    background: #1e1e1e;
+  }
+  .job-step {
+    border: 1px solid #555;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background: #2a2a2a;
+  }
+  .job-step-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .remove-step-btn {
+    background-color: #b94444 !important;
+    margin-bottom: 10px;
+    width: auto !important;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+  #inputPreview {
+    background: #222; color: #eee;
+    font-family: monospace; padding: 10px;
+    border-radius: 5px; max-height: 400px; overflow: auto;
+    white-space: pre-wrap; border: 1px solid #444;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Ryba GUI for ORCA</h1>
+
+  <div class="section">
+    <label for="xyzFile">Upload XYZ File (optional)</label>
+    <input type="file" id="xyzFile" accept=".xyz,.txt" />
+    <small class="description">Upload a file to populate coordinates below</small>
+  </div>
+  <div class="section">
+    <label for="xyzTextarea">XYZ Coordinates</label>
+    <textarea id="xyzTextarea" placeholder="Paste or write coordinates here..."></textarea>
+    <small class="description">Editable coordinate input</small>
+  </div>
+
+  <div class="section">
+    <label for="calcType">Calculation Type</label>
+    <select id="calcType">
+      <option value="opt">Optimization</option>
+      <option value="sp">Single Point</option>
+      <option value="freq">Frequency</option>
+      <option value="opt+freq">Opt + Frequency</option>
+      <option value="td-dft">TD-DFT</option>
+      <option value="ts">Transition State Search</option>
+      <option value="irc">IRC (Intrinsic Reaction Coordinate)</option>
+      <option value="scan">Relaxed Surface Scan</option>
+      <option value="goat">GOAT Conformer Analysis</option>
+      <option value="compound">Multi-step (Compound) Job</option>
+    </select>
+  </div>
+
+  <div class="section" id="compoundJobContainer" style="display:none;">
+    <label><strong>Compound Job Steps</strong></label>
+    <div id="compoundSteps"></div>
+    <button id="addStepBtn">Add New Job Step</button>
+    <small class="description">Add multiple sequential jobs. Each step runs in order.</small>
+  </div>
+
+  <div id="singleJobParams">
+
+    <div class="section" id="tdParams" style="display:none;">
+      <label for="tddftNRoots">TD-DFT Number of Excitations (NRoots)</label>
+      <input type="number" id="tddftNRoots" min="1" max="100" value="10" />
+    </div>
+
+    <div class="section" id="ircParams" style="display:none;">
+      <label>IRC Direction</label>
+      <select id="ircDirection">
+        <option value="forward">Forward</option>
+        <option value="backward">Backward</option>
+        <option value="both">Both</option>
+      </select>
+      <label for="ircSteps">Number of Steps</label>
+      <input type="number" id="ircSteps" min="1" max="1000" value="30" />
+    </div>
+
+    <div class="section" id="scanParams" style="display:none;">
+      <label for="scanType">Scan Type</label>
+      <select id="scanType">
+        <option value="bond">Bond</option>
+        <option value="angle">Angle</option>
+        <option value="dihedral">Dihedral</option>
+      </select>
+      <label for="scanAtoms">Atoms to Scan (comma-separated indices)</label>
+      <input type="text" id="scanAtoms" placeholder="e.g. 1,2 or 1,2,3 or 1,2,3,4" />
+      <label for="scanSteps">Number of Points</label>
+      <input type="number" id="scanSteps" min="1" max="100" value="10" />
+    </div>
+
+    <div class="section">
+      <label for="freezeAtoms">Freeze Atoms (comma-separated indices, optional)</label>
+      <input type="text" id="freezeAtoms" placeholder="e.g. 1,2,3" />
+      <small class="description">Atoms to freeze positions during optimization</small>
+    </div>
+
+    <div class="section">
+      <label for="methodSelect">Method</label>
+      <select id="methodSelect">
+        <optgroup label="DFT Functionals">
+          <option value="PBE">PBE</option>
+          <option value="BP86">BP86</option>
+          <option value="BLYP">BLYP</option>
+          <option value="PBE0">PBE0</option>
+          <option value="B97-3c">B97-3c</option>
+          <option value="wB97X">wB97X</option>
+          <option value="wB97X-V">wB97X-V</option>
+          <option value="wB97M">wB97M</option>
+          <option value="wB97M-V">wB97M-V</option>
+          <option value="CAM-B3LYP">CAM-B3LYP</option>
+          <option value="LC-wPBE">LC-wPBE</option>
+          <option value="TPSS">TPSS</option>
+          <option value="M06-L">M06-L</option>
+          <option value="M06">M06</option>
+          <option value="M06-2X">M06-2X</option>
+          <option value="TPSSh">TPSSh</option>
+        </optgroup>
+        <optgroup label="Composite Methods">
+          <option value="PWPB95">PWPB95</option>
+          <option value="r2SCAN-3c">r2SCAN-3c</option>
+          <option value="HF-3c">HF-3c</option>
+        </optgroup>
+        <optgroup label="Post-HF Methods">
+          <option value="HF">Hartree-Fock</option>
+          <option value="MP2">MP2</option>
+          <option value="CCSD">CCSD</option>
+          <option value="CCSD(T)">CCSD(T)</option>
+          <option value="DLPNO-CCSD(T)">DLPNO-CCSD(T)</option>
+        </optgroup>
+        <optgroup label="XTB Methods for GOAT">
+          <option value="GFN1-xTB">GFN1-xTB</option>
+          <option value="GFN2-xTB">GFN2-xTB</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="section">
+      <label for="dispersionSelect">Dispersion Correction</label>
+      <select id="dispersionSelect">
+        <option value="None">None</option>
+        <option value="D3BJ">D3BJ</option>
+        <option value="D4">D4</option>
+        <option value="D3ZERO">D3ZERO</option>
+        <option value="D3">D3</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <label for="approxSelect">Approximations</label>
+      <select id="approxSelect">
+        <option value="none">None</option>
+        <option value="RI">RI</option>
+        <option value="RI-J">RI-J</option>
+        <option value="RIJK">RIJK</option>
+        <option value="RIJCOSX">RIJCOSX</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <label for="basisSelect">Basis Set</label>
+      <select id="basisSelect">
+        <option value="def2-SVP">def2-SVP</option>
+        <option value="def2-SVPD">def2-SVPD</option>
+        <option value="def2-TZVP">def2-TZVP</option>
+        <option value="def2-TZVPD">def2-TZVPD</option>
+        <option value="def2-QZVP">def2-QZVP</option>
+        <option value="def2-QZVPD">def2-QZVPD</option>
+        <option value="cc-pVDZ">cc-pVDZ</option>
+        <option value="cc-pVTZ">cc-pVTZ</option>
+        <option value="cc-pVQZ">cc-pVQZ</option>
+        <option value="aug-cc-pVDZ">aug-cc-pVDZ</option>
+        <option value="aug-cc-pVTZ">aug-cc-pVTZ</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <label for="auxSelect">Auxiliary Basis Set</label>
+      <select id="auxSelect">
+        <optgroup label="For RI and RI-J">
+          <option value="def2/J">def2/J (AutoAux)</option>
+          <option value="def2-SVP/J">def2-SVP/J</option>
+          <option value="def2-TZVP/J">def2-TZVP/J</option>
+          <option value="def2-QZVP/J">def2-QZVP/J</option>
+        </optgroup>
+        <optgroup label="For RIJK and RIJCOSX">
+          <option value="def2/JK">def2/JK (AutoAux)</option>
+          <option value="def2-SVP/C">def2-SVP/C</option>
+          <option value="def2-TZVP/C">def2-TZVP/C</option>
+          <option value="def2-QZVP/C">def2-QZVP/C</option>
+        </optgroup>
+        <optgroup label="Other">
+          <option value="None">None</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="section">
+      <label for="solventModelSelect">Solvent Model</label>
+      <select id="solventModelSelect">
+        <option value="none">None</option>
+        <option value="CPCM">CPCM</option>
+        <option value="SMD">SMD</option>
+        <option value="ALPB">ALPB</option>
+      </select>
+    </div>
+
+    <div class="section" id="solventChoiceSection" style="display:none;">
+      <label for="solventChoice">Solvent</label>
+      <select id="solventChoice"></select>
+    </div>
+
+    <div class="section">
+      <label for="gridSizeSelect">Integration Grid</label>
+      <select id="gridSizeSelect">
+        <option value="defgrid1">defgrid1 (Coarse)</option>
+        <option value="defgrid2" selected>defgrid2 (Normal)</option>
+        <option value="defgrid3">defgrid3 (Good)</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <label><input type="checkbox" id="slowConvCheckbox" /> SlowConvergence</label>
+      <label><input type="checkbox" id="tightSCFCheckbox" /> TightSCF</label>
+    </div>
+
+    <div class="section inline-flex">
+      <div>
+        <label for="chargeInput">Charge</label>
+        <input type="number" id="chargeInput" value="0" />
+      </div>
+      <div>
+        <label for="multiplicityInput">Multiplicity</label>
+        <input type="number" id="multiplicityInput" value="1" min="1" />
+      </div>
+    </div>
+
+    <div class="section inline-flex">
+      <div>
+        <label for="memoryInput">Memory per core (MB)</label>
+        <input type="number" id="memoryInput" value="4000" min="1000" step="1000" />
+      </div>
+      <div>
+        <label for="cpusInput">Number of CPUs</label>
+        <input type="number" id="cpusInput" value="4" min="1" max="128" />
+      </div>
+    </div>
+
+    <div class="section">
+      <label for="customInput">Custom Input Block (optional)</label>
+      <textarea id="customInput" placeholder="Add custom ORCA input commands here..."></textarea>
+    </div>
+
+  </div>
+
+  <button id="generateBtn">Generate ORCA Input</button>
+  <pre id="inputPreview" aria-live="polite" aria-atomic="true"></pre>
+
+</div>
+
+<script>
+  const calcTypeSelect = document.getElementById('calcType');
+  const tdParams = document.getElementById('tdParams');
+  const ircParams = document.getElementById('ircParams');
+  const scanParams = document.getElementById('scanParams');
+  const solventModelSelect = document.getElementById('solventModelSelect');
+  const solventChoiceSection = document.getElementById('solventChoiceSection');
+  const solventChoice = document.getElementById('solventChoice');
+  const generateBtn = document.getElementById('generateBtn');
+  const inputPreview = document.getElementById('inputPreview');
+  const xyzFileInput = document.getElementById('xyzFile');
+  const xyzTextarea = document.getElementById('xyzTextarea');
+  const compoundJobContainer = document.getElementById('compoundJobContainer');
+  const compoundStepsDiv = document.getElementById('compoundSteps');
+  const addStepBtn = document.getElementById('addStepBtn');
+  const singleJobParams = document.getElementById('singleJobParams');
+  const methodSelect = document.getElementById('methodSelect');
+
+  const solventOptions = {
+    CPCM: ['Water','Acetonitrile','Methanol','Ethanol','Chloroform','Dichloromethane','Toluene','Benzene','THF','DMF','DMSO','Acetone','Hexane'],
+    SMD: ['Water','Acetonitrile','Methanol','Ethanol','Chloroform','Dichloromethane','Toluene','Benzene','THF','DMF','DMSO','Acetone','Hexane','Cyclohexane','CCl4','Diethylether'],
+    ALPB: ['Water','Acetonitrile','CH2Cl2','CHCl3','Acetone','Methanol','Ethanol','THF','Toluene','Hexane']
+  };
+
+  function updateMainVisibility() {
+    const val = calcTypeSelect.value;
+    tdParams.style.display = (val === 'td-dft') ? 'block' : 'none';
+    ircParams.style.display = (val === 'irc') ? 'block' : 'none';
+    scanParams.style.display = (val === 'scan') ? 'block' : 'none';
+    compoundJobContainer.style.display = (val === 'compound') ? 'block' : 'none';
+    singleJobParams.style.display = (val !== 'compound') ? 'block' : 'none';
+  }
+
+  function loadSolventChoices() {
+    const model = solventModelSelect.value;
+    solventChoiceSection.style.display = (model === 'none') ? 'none' : 'block';
+    solventChoice.innerHTML = solventOptions[model]?.map(s => `<option value="${s}">${s}</option>`).join('') || '';
+  }
+
+  xyzFileInput.addEventListener('change', async e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const text = await file.text();
+    const lines = text.split(/\r?\n/);
+    xyzTextarea.value = (lines.length > 2 && /^\s*\d+\s*$/.test(lines[0])) ? lines.slice(2).join('\n').trim() : text.trim();
+  });
+
+  function createStepElement(index) {
+    const stepDiv = document.createElement('div');
+    stepDiv.className = 'job-step';
+    stepDiv.innerHTML = `
+      <div class="job-step-header">Job Step #${index + 1}</div>
+      <button type="button" class="remove-step-btn">Remove Step</button>
+      <label>Calculation Type</label>
+      <select class="step-calc-type">
+        <option value="opt">Optimization</option>
+        <option value="sp">Single Point</option>
+        <option value="freq">Frequency</option>
+        <option value="td-dft">TD-DFT</option>
+      </select>
+      <label>Method</label>
+      <select class="step-method">${methodSelect.innerHTML}</select>
+      <label>Basis Set</label>
+      <select class="step-basis">
+        <option value="def2-SVP">def2-SVP</option>
+        <option value="def2-TZVP">def2-TZVP</option>
+        <option value="def2-QZVP">def2-QZVP</option>
+      </select>
+      <label>Custom Keywords</label>
+      <input type="text" class="step-custom" placeholder="e.g., D3BJ RIJCOSX">
+    `;
+    stepDiv.querySelector('.remove-step-btn').addEventListener('click', () => {
+      stepDiv.remove();
+      updateStepHeaders();
+    });
+    return stepDiv;
+  }
+
+  function updateStepHeaders() {
+    document.querySelectorAll('.job-step').forEach((step, idx) => {
+      step.querySelector('.job-step-header').textContent = `Job Step #${idx + 1}`;
+    });
+  }
+
+  addStepBtn.addEventListener('click', () => {
+    compoundStepsDiv.appendChild(createStepElement(compoundStepsDiv.children.length));
+  });
+
+  function generateCompoundInput() {
+    if (compoundStepsDiv.children.length === 0) {
+      alert('Add at least one job step for compound jobs.');
+      return '';
+    }
+    let fullInput = '# Generated by Ryba GUI for ORCA - Compound Job\n\n';
+    const charge = document.getElementById('chargeInput').value.trim() || '0';
+    const mult = document.getElementById('multiplicityInput').value.trim() || '1';
+    const mem = document.getElementById('memoryInput').value.trim() || '4000';
+    const cpus = document.getElementById('cpusInput').value.trim() || '4';
+    const coords = xyzTextarea.value.trim();
+
+    document.querySelectorAll('.job-step').forEach(step => {
+      let stepCalcType = step.querySelector('.step-calc-type').value;
+      let stepMethod = step.querySelector('.step-method').value;
+      let stepBasis = step.querySelector('.step-basis').value;
+      let stepCustom = step.querySelector('.step-custom').value.trim();
+
+      fullInput += `! ${stepMethod} ${stepBasis} ${stepCalcType} ${stepCustom}\n`;
+      fullInput += `%pal nprocs ${cpus} end\n`;
+      fullInput += `%maxcore ${mem}\n`;
+      fullInput += `* xyz ${charge} ${mult}\n${coords}\n*\n\n`;
+      fullInput += `$new_job\n\n`;
+    });
+    return fullInput.trim().replace(/\$new_job\n\n$/, ''); // Remove last separator
+  }
+
+  function generateSingleInput() {
+    let input = '# Generated by Ryba GUI for ORCA\n\n';
+    const mainMethod = methodSelect.value;
+    const disp = document.getElementById('dispersionSelect').value;
+    const approx = document.getElementById('approxSelect').value;
+    const basis = document.getElementById('basisSelect').value;
+    const aux = document.getElementById('auxSelect').value;
+    const solventModelVal = solventModelSelect.value;
+    const solventNameVal = solventChoice.value;
+    const grid = document.getElementById('gridSizeSelect').value;
+    const useSlowConv = document.getElementById('slowConvCheckbox').checked;
+    const useTightSCF = document.getElementById('tightSCFCheckbox').checked;
+    const charge = document.getElementById('chargeInput').value.trim() || '0';
+    const mult = document.getElementById('multiplicityInput').value.trim() || '1';
+    const mem = document.getElementById('memoryInput').value.trim() || '4000';
+    const cpus = document.getElementById('cpusInput').value.trim() || '4';
+    const coords = xyzTextarea.value.trim();
+    const custom = document.getElementById('customInput').value.trim();
+    const calcVal = calcTypeSelect.value;
+    
+    if (!coords) {
+        alert('XYZ coordinates are required!');
+        return '';
+    }
+
+    input += `! ${mainMethod} ${basis}`;
+    if (disp !== 'None') input += ` ${disp}`;
+    if (approx !== 'none') input += ` ${approx}`;
+    
+    // Add calculation type keyword
+    const typeMap = { 'opt': 'Opt', 'sp': '', 'freq': 'Freq', 'opt+freq': 'Opt Freq', 'ts': 'OptTS', 'goat': 'GOAT', 'td-dft': 'TD-DFT', 'irc': 'IRC', 'scan': 'Scan' };
+    input += ` ${typeMap[calcVal] || ''}`;
+
+    if (useSlowConv) input += ' SlowConv';
+    if (useTightSCF) input += ' TightSCF';
+    input += ` ${grid}\n`;
+
+    // Special blocks for IRC, Scan, TD-DFT
+    if (calcVal === 'irc') {
+      const dir = document.getElementById('ircDirection').value;
+      input += `%irc\n  maxpoints ${document.getElementById('ircSteps').value}\n  ${dir === 'forward' || dir === 'both' ? 'forward true' : ''}\n  ${dir === 'backward' || dir === 'both' ? 'backward true' : ''}\nend\n`;
+    }
+    if (calcVal === 'scan') {
+      const atoms = document.getElementById('scanAtoms').value.replace(/,/g, ' ').trim();
+      input += `%geom\n  Scan\n    ${document.getElementById('scanType').value} ${atoms} = n_points=${document.getElementById('scanSteps').value}\n  end\nend\n`;
+    }
+     if (calcVal === 'td-dft') {
+      input += `%tddft nroots ${document.getElementById('tddftNRoots').value} end\n`;
+    }
+
+    const freeze = document.getElementById('freezeAtoms').value.trim();
+    if(freeze) {
+        input += `%geom\n  constraints\n    {C ${freeze.replace(/,/g, ' ')} C}\n  end\nend\n`;
+    }
+    
+    if (solventModelVal !== 'none') {
+        input += solventModelVal === 'SMD' ? `%cpcm smd true smdsolvent "${solventNameVal}" end\n` : `%cpcm solvent "${solventNameVal}" end\n`;
+    }
+    
+    if (aux !== 'None') input += `%basis aux-basis "${aux}" end\n`;
+
+    input += `%pal nprocs ${cpus} end\n%maxcore ${mem}\n`;
+    if (custom) input += `${custom}\n`;
+    input += `* xyz ${charge} ${mult}\n${coords}\n*\n`;
+    
+    return input;
+  }
+
+  generateBtn.addEventListener('click', () => {
+    const isCompound = calcTypeSelect.value === 'compound';
+    inputPreview.textContent = isCompound ? generateCompoundInput() : generateSingleInput();
+  });
+
+  calcTypeSelect.addEventListener('change', updateMainVisibility);
+  solventModelSelect.addEventListener('change', loadSolventChoices);
+  window.addEventListener('load', () => {
+    updateMainVisibility();
+    loadSolventChoices();
+  });
+</script>
+</body>
+</html>
+```
