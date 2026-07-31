@@ -84,5 +84,3 @@ It is still work in progress and every once in a while I add a few slides.
 ![Snippet from the computational guide](assets/img/QC/QC_guide.png "QC_guide")
 ...
 </details>
-D 
-3
