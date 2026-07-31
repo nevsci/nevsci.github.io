@@ -42,7 +42,7 @@ The most important part is to attach LEDS symmetrically so all the vials are get
 This stand was designed to hold 12 NMR tubes (5 mm diameter) and if turned upside down it can hold a flask. It is useful for round bottom or pear-shaped flask of volumes from 10 to 100 mL. The top part can be used to imprint some text like name as you can see from included photos. (Download the STL file [here](../assets/files/NMRStand/Stand.stl)!)  
 It wroks well if its printed from PLA, but I would recommend TPU for extra grip. Especially if you would like to use it to hold flasks as well. However, these materials are not particularly solvent resistant and if you wish to have a stand resiliant even to the clumsier of hands, print it from PP filament.
  [You can also find this stand on Printables](https://www.printables.com/model/211174-nmr-tubes-stand-with-a-place-for-flask)
-![The 3D NMR tube stand doubling as a RBF stand](assets/img/NMRStand/Stand.jpg "Tube_stand")
+![The 3D NMR tube stand doubling as a RBF stand](/assets/img/NMRStand/Stand.jpg "Tube_stand")
 </details>
 
 
@@ -50,9 +50,12 @@ It wroks well if its printed from PLA, but I would recommend TPU for extra grip.
 <summary><strong>3D printable beakers and flask made from polypropylene</strong></summary>
 
 This is currently work in progress. Polypropylene is rather resilient polymer which can be 3D printable. This could give us option to print custom chemical labware, parts or reactors. 
-![3D printed beaker from PP](assets/img/PP_labware/Beaker.jpeg "Beaker from PP")
-{: style="width: 50%; height: auto;" }
-</details>
+<img
+  src="{{ '/assets/img/PP_labware/Beaker.jpeg' | relative_url }}"
+  alt="3D printed beaker from PP"
+  title="Beaker from PP"
+  style="display: block; width: 100%; max-width: 500px; height: auto; margin: 1rem auto;">
+  </details>
 
 
 ### Software related tools
@@ -65,7 +68,7 @@ During my time in academia I was putting emphasis on the fact that even a synthe
 This is still version work in progress and feedback is welcomed. 
 (Download the file [here](../assets/files/Ryba_093.html)!) 
 
-![Demonstration of RYBA GUI](assets/img/RYBA/RYBA_example.png "RYBA_GUI")
+![Demonstration of RYBA GUI](/assets/img/RYBA/RYBA_example.png "RYBA_GUI")
 
 ...
 </details>
@@ -81,6 +84,6 @@ It is still work in progress and every once in a while I add a few slides.
 
 (You can get the PDF of the guide [here](../assets/files/QC_guide_5_2026.pdf)!) . Currently it is in version from May 2026.
 
-![Snippet from the computational guide](assets/img/QC/QC_guide.png "QC_guide")
+![Snippet from the computational guide](/assets/img/QC/QC_guide.png "QC_guide")
 ...
 </details>
