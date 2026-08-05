@@ -72,7 +72,7 @@ During my time in academia I was putting emphasis on the fact that even a synthe
 This is still version work in progress and feedback is welcomed. 
 (Download the file [**here**](../assets/projects/RYBA/Ryba_093.html)!) 
 
-![Demonstration of RYBA GUI](../assets/img/RYBA/RYBA_example.png "RYBA_GUI")
+![Demonstration of RYBA GUI](../assets/projects/RYBA/RYBA_example.png "RYBA_GUI")
 
 ...
 </details>
@@ -88,6 +88,6 @@ It is still work in progress and every once in a while I add a few slides.
 
 (You can get the PDF of the guide [here](../assets/files/QC_guide_5_2026.pdf)!) . Currently it is in version from May 2026.
 
-![Snippet from the computational guide](../assets/img/QC/QC_guide.png "QC_guide")
+![Snippet from the computational guide](../assets/projects/QC/QC_guide.png "QC_guide")
 ...
 </details>
