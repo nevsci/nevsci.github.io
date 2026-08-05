@@ -51,7 +51,7 @@ It wroks well if its printed from PLA, but I would recommend TPU for extra grip.
 
 This is currently work in progress. Polypropylene is rather resilient polymer which can be 3D printable. This could give us option to print custom chemical labware, parts or reactors. 
 <img
-  src="{{ '/assets/img/PP_labware/Beaker.jpeg' | relative_url }}"
+  src="{{ '/assets/img/PP_labware/Combined.jpg' | relative_url }}"
   alt="3D printed beaker from PP"
   title="Beaker from PP"
   style="display: block; width: 100%; max-width: 500px; height: auto; margin: 1rem auto;">
