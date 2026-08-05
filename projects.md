@@ -39,7 +39,7 @@ The most important part is to attach LEDS symmetrically so all the vials are get
 <details class="project" markdown="1">
 <summary><strong>Stand for NMR tubes</strong></summary>
 
-This stand was designed to hold 12 NMR tubes (5 mm diameter) and if turned upside down it can hold a flask. It is useful for round bottom or pear-shaped flask of volumes from 10 to 100 mL. The top part can be used to imprint some text like name as you can see from included photos. (Download the STL file [**here**](../assets/files/NMRStand/Stand.stl)!)  
+This stand was designed to hold 12 NMR tubes (5 mm diameter) and if turned upside down it can hold a flask. It is useful for round bottom or pear-shaped flask of volumes from 10 to 100 mL. The top part can be used to imprint some text like name as you can see from included photos. (Download the STL file [**here**](../assets/img/NMRStand/Stand.stl)!)  
 It wroks well if its printed from PLA, but I would recommend TPU for extra grip. Especially if you would like to use it to hold flasks as well. However, these materials are not particularly solvent resistant and if you wish to have a stand resiliant even to the clumsier of hands, print it from PP filament.
 
 [You can also find this stand on Printables](https://www.printables.com/model/211174-nmr-tubes-stand-with-a-place-for-flask)
@@ -53,7 +53,7 @@ It wroks well if its printed from PLA, but I would recommend TPU for extra grip.
 
 This is currently work in progress. Polypropylene is rather resilient polymer which can be 3D printable. This could give us option to print custom chemical labware, parts or reactors. The first modeled test object is a small beaker. The main purpose of this model was to optimize printing parameters in order to obtain nice smooth print as PP is more sensitive to printing speed and temperature compared to common filaments like PLA or PETG. In general, it is better to print at higher temperatures and lower speeds. In the case of my printer, the printing speed was limited via maximum volumetric speed to about 8 - 10 mm^3/s at 260°C. No heating chamber required. 
 
-(Download the STL file for the beaker with volume label [**here**](nevsci.github.io/tree/master/assets/img/PP_labware/Beaker_50mL_volume.stl)!) (And the STL file for the beaker without volume label [**here**](../assets/files/PP_labware/Beaker_50mL.stl)!)
+(Download the STL file for the beaker with volume label [**here**](../assets/img/PP_labware/Beaker_50mL_volume.stl)!) (And the STL file for the beaker without volume label [**here**](../assets/img/PP_labware/Beaker_50mL.stl)!)
 
 [You can also find this project on Printables](https://www.printables.com/)
 
