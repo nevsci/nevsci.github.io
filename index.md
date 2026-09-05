@@ -5,9 +5,7 @@ subtitle: I need to work on something different so I am here
 ---
 
 
-## Welcome to my website.
+#### Welcome to my repository
 
-I am a just an ordinary citizen who likes chemistry, especially when it involves light. There might be a few other things and some of them I would like to share here. This page is a mix of:
-- what was not published
-- helpful tools and projects
-- occasional posts about non-science related topics
+This place will serve to present myself and to show some of the projects I've been working on. For now the topics will mainly revolve around chemistry and useful tools or materials put together over the past few years but over time the span will likely broaden. 
+
