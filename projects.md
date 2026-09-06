@@ -67,12 +67,12 @@ This is currently work in progress. Polypropylene is rather resilient polymer wh
 <details class="project" markdown="1">
 <summary><strong>RybaGUI — ORCA input generator</strong></summary>
 
-During my time in academia I was putting emphasis on the fact that even a synthetic chemist who knows the fume hood the most can still do calculations and obtain very good insight into the chemical reactivity or calculate spectra to help with the analysis of the molecule. One of the hurdles facing many students when they start with calculations is the intimidation of the command line style input. For this reason I decided to create simple utility to help create inputs for ORCA. It is a html based script to which one can add coordinate and then through a several drop menus select an appropriate input for the calculations. Type of the job, level of theory, basis set, solvent and so on. 
+During my time in academia I was putting emphasis on the fact that even a synthetic chemist who knows the fume hood the most can still do calculations and obtain very good insight into the chemical reactivity or calculate spectra to help with the analysis of the molecule. One of the hurdles facing many students when they start with calculations is the intimidation of the command line style input. For this reason I decided to create simple utility to help create inputs for ORCA. It is a html based script to which one can add coordinate and then through a several drop menus select an appropriate input for the calculations. Type of the job, level of theory, basis set, solvent and so on. More over it also allows to analyze outputs and can display a plethora of information from basics like geometry of the structure, energies, UV-VIS spectra to more complicated features like creation of thermochemical profile of calculated reactions. 
 
 This is still version work in progress and feedback is welcomed. 
-(Download the file [**here**](../assets/projects/RYBA/Ryba_093.html)!) 
+(Download the file [**here**](../assets/projects/RYBA/RYBA_1.14.0.html)!) 
 
-![Demonstration of RYBA GUI](../assets/projects/RYBA/RYBA_example.png "RYBA_GUI")
+More information can be found at this [post](https://nevesely.science/2026-09-04-blogs/).
 
 ...
 </details>
