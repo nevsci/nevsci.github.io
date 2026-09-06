@@ -1,6 +1,11 @@
 ---
 ---
 
+.container-md p {
+  text-align: justify;
+  hyphens: auto;
+}
+
 .container-md, .container-lg, .container {
   max-width: 1400px;
 }
