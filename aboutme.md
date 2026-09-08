@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: How I Learn to Stop Worrying and Love chemistry
+subtitle: How I Learn to Stop Worrying and Love Chemistry
 permalink: /aboutme/
 ---
 ## My story
