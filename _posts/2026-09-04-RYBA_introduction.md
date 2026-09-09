@@ -42,7 +42,9 @@ Finally, I would like RYBA projects to become genuinely reproducible computation
 RYBA remains very much a developing project, shaped by calculations that are useful in real research rather than by an ambition to reproduce every option in the ORCA manual. The long-term aim is simple: make computational work easier to prepare, easier to inspect and considerably harder to misunderstand.
 
 **Examples from the input generator section of RYBA program.**
+
 ![Example of input generator](../assets/projects/RYBA/inputs_1.png "RYBA input generator")
 
 **Examples from the output analyzer  of RYBA .**
+
 ![Example of output analyzer](../assets/projects/RYBA/outputs_1.png "RYBA output analyzer")
