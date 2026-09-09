@@ -6,4 +6,5 @@ permalink: /downloads/
 
 ## Downloads
 
-All the materials can be currently downloaded at their corresponding place on other part of this website. For now this page is a placeholder for future. 
+[**The current version of RYBA, the GUI input generater and output analyzer for ORCA can be found here!**](../assets/projects/RYBA/RYBA_1.15.2.html)
+The current version is 1.5.2.
