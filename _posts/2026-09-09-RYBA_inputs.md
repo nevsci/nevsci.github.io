@@ -18,11 +18,15 @@ The philosophy of RYBA for input generation is simple and starts with an XYZ coo
 ![XYZ coordinates input](../assets/projects/RYBA/blog_inputs/input_XYZ.png "XYZ coordinates and the title screen of RYBA.")
 
 
+
+
 Naturally, RYBA contains a plethora of  different jobs and methods which can be selected using simple dropdown menus. The job types available reach from simple optimizations, through excited states and transition state search to GOAT conformer analysis and relaxed scans. RYBA also allows for creation of input files with compound jobs chaining multiple processes into one input file. A typical use case of this feature for me is an optimization with frequency calculation and subsequent TD-DFT to obtain absorption spectra of the examined species. RYBA also contains checks and controls to tell user whether their methods already contains dispersion correction and thus additional keywords in this regards should be avoided. The same principle applies for basis set and composite methods. Overall there are most of the common methods present ranging from pure DFT functionals to double hybrids and several post-HF methods. Among the basis set there are predominantly Karlsruhe type and then a few special ones. 
 
 ***Selection of job type or method is as easy as clicking a dropdown menu.***
 
 ![Methods input](../assets/projects/RYBA/blog_inputs/input_combined_methods.png "Selection of job types and methods.")
+
+
 
 
 Other parameters for the calculations can be set bellow. Ranging from convergence type to approximations used to speed up the calculations. Again, the program includes checks to make sure correct approximations are applied to different types of functionals.
@@ -33,11 +37,15 @@ Other parameters for the calculations can be set bellow. Ranging from convergenc
 
 
 
+
+
 However, even if your favourite method or basis set is missing, it can be defined within the program and not just added as a one-time keyword!
 
 ***Method catalogue used to add new methods and define their properties.***
 
 ![Methods catalogue](../assets/projects/RYBA/blog_inputs/input_methods_catalogue.png "Addition of new methods.")
+
+
 
 
 In case you have a routine set of job types and methods used you can generate templates (or select one of the pre-existing ones) in order to speed up your input file creation. In that case you only need to add appropriate XYZ coordinates and everything else is handled by the template of your choice.
