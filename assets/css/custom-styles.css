@@ -8,8 +8,12 @@
   text-align: center;
 }
 
-#visitor-count {
-  font-weight: 600;
+.visitor-count-img {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 4px;
 }
 
 .visitor-counter {
