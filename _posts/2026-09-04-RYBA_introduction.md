@@ -9,13 +9,9 @@ tags: [RYBA, ORCA, software, computational chemistry]
 author: Tomáš
 ---
 
-<!-- Optional header image:
-![RYBA interface overview](../assets/projects/RYBA/ryba-overview.png)
--->
-
 Computational chemistry has no shortage of powerful software. It does, however, have a shortage of interfaces that make routine work less tedious without hiding what is actually being calculated. RYBA began as my attempt to build a clearer input generator for the ORCA quantum-chemistry package. It has since grown into a standalone workspace for preparing calculations, inspecting their results and turning them into useful figures.
 
-The current version, RYBA 1.15.1, still runs locally as a single HTML file. It requires no installation or internet connection, and molecular coordinates do not leave the computer.
+The current version, RYBA 1.15.2, still runs locally as a single HTML file. It requires no installation or internet connection, and molecular coordinates do not leave the computer.
 
 **What can RYBA do?**
 
@@ -27,8 +23,8 @@ Calculated structures can be inspected in an interactive molecular viewer, measu
 
 One of the most useful additions is the reaction thermochemistry assistant. Several calculated structures can be arranged into a reaction pathway, assigned as reactants, intermediates, transition states or products, and compared using electronic energies, ZPE-corrected energies, enthalpies or Gibbs energies. RYBA calculates relative energies and barriers and creates configurable reaction-profile diagrams, optionally including ball-and-stick structures. Safeguards flag differences in atom composition, charge, method, basis set, solvent, temperature and stationary-point character before a misleading graph is exported.
 
-
 [**If you are interested in this project, you can download it here.**](../assets/projects/RYBA/RYBA_1.15.2.html)
+
 
 
 Where could it go next?
