@@ -300,7 +300,6 @@ defaults:
       social-share: true # add social media sharing buttons to all blog posts
       footer-extra:
         - visitor-counter.html
-        - <img src="https://nevesely.goatcounter.com/counter/TOTAL.png?no_branding=1">
   -
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
