@@ -1,0 +1,28 @@
+<p class="visitor-counter">
+  Visitors since August 2026:
+  <span id="visitor-count">...</span>
+</p>
+
+<!-- Count the current visit -->
+<script
+  data-goatcounter="https://nevesely.goatcounter.com/count"
+  async
+  src="https://gc.zgo.at/count.js">
+</script>
+
+<!-- Retrieve and display the total site count -->
+<script>
+  fetch("https://nevesely.goatcounter.com/counter/TOTAL.json")
+    .then(function (response) {
+      if (!response.ok) {
+        throw new Error("Visitor counter unavailable");
+      }
+      return response.json();
+    })
+    .then(function (data) {
+      document.getElementById("visitor-count").textContent = data.count;
+    })
+    .catch(function () {
+      document.querySelector(".visitor-counter").style.display = "none";
+    });
+</script>
