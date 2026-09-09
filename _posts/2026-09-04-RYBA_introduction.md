@@ -28,7 +28,7 @@ Calculated structures can be inspected in an interactive molecular viewer, measu
 One of the most useful additions is the reaction thermochemistry assistant. Several calculated structures can be arranged into a reaction pathway, assigned as reactants, intermediates, transition states or products, and compared using electronic energies, ZPE-corrected energies, enthalpies or Gibbs energies. RYBA calculates relative energies and barriers and creates configurable reaction-profile diagrams, optionally including ball-and-stick structures. Safeguards flag differences in atom composition, charge, method, basis set, solvent, temperature and stationary-point character before a misleading graph is exported.
 
 
-[**If you are interested in this project, you can download it here.**](../assets/projects/RYBA/RYBA_1.15.1.html)
+[**If you are interested in this project, you can download it here.**](../assets/projects/RYBA/RYBA_1.15.2.html)
 
 
 Where could it go next?
