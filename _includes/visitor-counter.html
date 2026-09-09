@@ -1,6 +1,6 @@
-<p class="visitor-counter">
+<p class="visitor-counter" id="visitor-counter" style="display:none;">
   Visitors since September 2026:
-  <span id="visitor-count">—</span>
+  <span id="visitor-count"></span>
 </p>
 
 <script>
@@ -10,7 +10,9 @@
   request.addEventListener("load", function () {
     if (this.status >= 200 && this.status < 300) {
       var data = JSON.parse(this.responseText);
+
       document.getElementById("visitor-count").textContent = data.count;
+      document.getElementById("visitor-counter").style.display = "";
     }
   });
 
