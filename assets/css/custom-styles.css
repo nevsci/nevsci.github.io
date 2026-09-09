@@ -1,6 +1,28 @@
 ---
 ---
 
+.visitor-counter {
+  margin: 0.8rem 0 0;
+  font-size: 0.85rem;
+  color: #777;
+  text-align: center;
+}
+
+#visitor-count {
+  font-weight: 600;
+}
+
+.visitor-counter {
+  margin: 0.8rem 0 0;
+  font-size: 0.85rem;
+  color: #777;
+  text-align: center;
+}
+
+#visitor-count {
+  font-weight: 600;
+}
+
 .container-md p {
   text-align: justify;
   hyphens: auto;
