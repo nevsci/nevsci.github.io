@@ -1,6 +1,10 @@
-<p class="visitor-counter">
-  Visitors since September 2026:
-  <img
-    src="https://nevesely.goatcounter.com/counter/TOTAL.png?no_branding=1"
-    alt="Visitor count">
-</p>
+<script>
+    var t = setInterval(function() {
+        if (window.goatcounter && window.goatcounter.visit_count) {
+            clearInterval(t)
+            window.goatcounter.visit_count({append: 'body'})
+        }
+    }, 100)
+</script>
+<script data-goatcounter="https://nevesely.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
