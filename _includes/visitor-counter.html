@@ -1,44 +1,10 @@
-<p class="visitor-counter">
+<p>
   Visitors since September 2026:
-  <span id="visitor-count"></span>
 </p>
 
-<script>
-  var gcCounterWait = setInterval(function () {
-    if (window.goatcounter && window.goatcounter.visit_count) {
-      clearInterval(gcCounterWait);
-
-      window.goatcounter.visit_count({
-        append: '#visitor-count',
-        path: 'TOTAL',
-        no_branding: true,
-        style: `
-          div {
-            display: inline;
-            border: 0;
-            padding: 0;
-            margin: 0;
-            background: transparent;
-            color: inherit;
-            font: inherit;
-          }
-
-          #gcvc-for {
-            display: none;
-          }
-
-          #gcvc-views {
-            font: inherit;
-            font-weight: 600;
-          }
-        `
-      });
-    }
-  }, 100);
-</script>
-
-<script
-  data-goatcounter="https://nevesely.goatcounter.com/count"
-  async
-  src="https://gc.zgo.at/count.js">
-</script>
+<iframe
+  src="https://nevesely.goatcounter.com/counter/TOTAL.html?no_branding=1"
+  width="200"
+  height="60"
+  style="border:0;">
+</iframe>
