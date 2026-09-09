@@ -2,25 +2,11 @@
 ---
 
 .visitor-counter {
-  margin: 0.8rem 0 0;
-  font-size: 0.85rem;
-  color: #777;
+  margin-top: 0.6rem;
+  margin-bottom: 0;
   text-align: center;
-}
-
-.visitor-count-img {
-  display: inline-block;
-  width: 80px;
-  height: 30px;
-  vertical-align: middle;
-  margin-left: 4px;
-}
-
-.visitor-counter {
-  margin: 0.8rem 0 0;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #777;
-  text-align: center;
 }
 
 #visitor-count {
