@@ -1,10 +1,32 @@
-<script>
-    var t = setInterval(function() {
-        if (window.goatcounter && window.goatcounter.visit_count) {
-            clearInterval(t)
-            window.goatcounter.visit_count({append: 'body'})
-        }
-    }, 100)
+<p class="visitor-counter">
+  Visitors:
+  <span id="visitor-count">loading…</span>
+</p>
+
+<script
+  data-goatcounter="https://YOURCODE.goatcounter.com/count"
+  async
+  src="https://gc.zgo.at/count.js">
 </script>
-<script data-goatcounter="https://nevesely.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+
+<script>
+fetch("https://YOURCODE.goatcounter.com/counter/TOTAL.json")
+  .then(function(response) {
+    if (!response.ok) {
+      throw new Error(
+        "GoatCounter returned " +
+        response.status +
+        " " +
+        response.statusText
+      );
+    }
+    return response.json();
+  })
+  .then(function(data) {
+    document.getElementById("visitor-count").textContent = data.count;
+  })
+  .catch(function(error) {
+    console.error("GoatCounter visitor counter failed:", error);
+    document.getElementById("visitor-count").textContent = "unavailable";
+  });
+</script>
