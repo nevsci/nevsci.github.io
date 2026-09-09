@@ -1,10 +1,17 @@
-<p>
+<p class="visitor-counter">
   Visitors since September 2026:
+  <span id="visitor-count"></span>
 </p>
 
-<iframe
-  src="https://nevesely.goatcounter.com/counter/TOTAL.html?no_branding=1"
-  width="200"
-  height="60"
-  style="border:0;">
-</iframe>
+<script
+  data-goatcounter="https://nevesely.goatcounter.com/count"
+  src="https://gc.zgo.at/count.js">
+</script>
+
+<script>
+  window.goatcounter.visit_count({
+    append: '#visitor-count',
+    path: 'TOTAL',
+    no_branding: true
+  });
+</script>
