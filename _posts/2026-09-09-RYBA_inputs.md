@@ -9,7 +9,7 @@ tags: [RYBA, ORCA, software, computational chemistry, tutorial]
 author: Tomáš
 ---
 
-In the last [**post**](https://nevesely.science/2026-09-04-RYBA_introduction) RYBA as a suite for generating ORCA inputs and processing outputs was discussed. In this text I will show you a few concrete use cases of RYBA input generator. If you are more interesting about the procesing of output files you can find the information [**here**](https://nevesely.science/2026-09-09-RYBA_outputs/). 
+*In the last [**post**](https://nevesely.science/2026-09-04-RYBA_introduction) RYBA as a suite for generating ORCA inputs and processing outputs was discussed. In this text I will show you a few concrete use cases of RYBA input generator. If you are more interesting about the procesing of output files you can find the information [**here**](https://nevesely.science/2026-09-09-RYBA_outputs/).*
 
 The philosophy of RYBA for input generation is simple and starts with an XYZ coordinates of your molecule of interest. So far RYBA doesn't have a dedicated drawing function and can only used XYZ coordinates obtained from previous calculations or you need to draw the image in different software like [**Avogadro**](https://avogadro.cc/index.html) (this is official website or its mutation specifically modified for use with ORCA from the official [**ORCA forum**](https://orcaforum.kofo.mpg.de/)  or my favourite [**Chemcraft**](https://chemcraftprog.com/index.html).
 
