@@ -9,6 +9,8 @@ tags: [RYBA, ORCA, software, computational chemistry]
 author: Tomáš
 ---
 
+*If you want to go straight to the example of RYBA's functionality, there is a [**post input generation**](https://nevesely.science/2026-09-09-RYBA_inputs) where different options and available features for smooth and reliable calculation preparations are considered. On the other hand, if your calculations are done already, RYBA offers an expanding suite of options to process the output files and you can [**read all about them here.**](https://nevesely.science/2026-09-09-RYBA_outputs/).*
+
 Computational chemistry has no shortage of powerful software. It does, however, have a shortage of interfaces that make routine work less tedious without hiding what is actually being calculated. RYBA began as my attempt to build a clearer input generator for the ORCA quantum-chemistry package. It has since grown into a standalone workspace for preparing calculations, inspecting their results and turning them into useful figures.
 
 The current version, RYBA 1.15.2, still runs locally as a single HTML file. It requires no installation or internet connection, and molecular coordinates do not leave the computer.
