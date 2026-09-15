@@ -17,6 +17,8 @@ Computational chemistry has no shortage of powerful software. It does, however, 
 
 The current version, RYBA 1.15.2, still runs locally as a single HTML file. It requires no installation or internet connection, and molecular coordinates do not leave the computer.
 
+###[**If you are interested in this project, you can download it here.**](../downloads/)###
+
 **What can RYBA do?**
 
 The Input Builder prepares common ORCA calculations, including optimizations, frequencies, TD-DFT, scans, transition-state searches, NEB-TS, GOAT and IRC pathways. Jobs can be combined into workflows, saved as projects and reused as templates. More importantly, RYBA checks combinations of methods, basis sets, approximations, solvents and numerical settings before the input is exported. The intention is not to replace scientific judgement, but to catch avoidable technical mistakes early.
@@ -26,8 +28,6 @@ The Results Analyzer reads ORCA outputs and separates complex calculations into 
 Calculated structures can be inspected in an interactive molecular viewer, measured using distances, angles and dihedrals, and exported as publication-ready SVG or PNG images. The latest renderer uses shared atom-and-bond depth ordering, giving molecular figures a more convincing three-dimensional appearance. Vibrational modes can be animated directly, while a transition-state summary helps identify significant imaginary frequencies and the atoms involved in the corresponding motion.
 
 One of the most useful additions is the reaction thermochemistry assistant. Several calculated structures can be arranged into a reaction pathway, assigned as reactants, intermediates, transition states or products, and compared using electronic energies, ZPE-corrected energies, enthalpies or Gibbs energies. RYBA calculates relative energies and barriers and creates configurable reaction-profile diagrams, optionally including ball-and-stick structures. Safeguards flag differences in atom composition, charge, method, basis set, solvent, temperature and stationary-point character before a misleading graph is exported.
-
-[**If you are interested in this project, you can download it here.**](../downloads/)
 
 
 
