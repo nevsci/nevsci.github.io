@@ -17,7 +17,7 @@ Computational chemistry has no shortage of powerful software. It does, however, 
 
 The current version, RYBA 1.15.2, still runs locally as a single HTML file. It requires no installation or internet connection, and molecular coordinates do not leave the computer.
 
-###[**If you are interested in this project, you can download it here.**](../downloads/)###
+###[**If you are interested in this project, you can download it here.**](../downloads/)
 
 **What can RYBA do?**
 
