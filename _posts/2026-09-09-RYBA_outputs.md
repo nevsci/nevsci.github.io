@@ -11,7 +11,7 @@ author: Tomáš
 
 *After the introduction of [**RYBA**](https://nevesely.science/2026-09-04-RYBA_introduction) software, and its use cases for [**creation**](https://nevesely.science/2026-09-04-RYBA_introduction) of ORCA input files, it is now time to speak about what RYBA can do four processing of your outputs from ORCA.*
 
-
+[**The program itself can be found on the download page.**](../downloads/)
 
 Since this software was originally intended as a teaching tool for beginners untouched by calculations, there is a plethora of tests and checks which verify the normal termination of the calculations and try to give hints what some results could mean. An example of these hints will be shown further. Upon loading a new file user will get an overview of what type of job was performed, what method and basis set was used as well as the basic parameters such as energies. At the same time a window with the resulting molecule is available and allows user to measure distances, angles and dihedrals between the appropriate amount of selected atoms.
 
