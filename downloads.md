@@ -6,5 +6,14 @@ permalink: /downloads/
 
 ## Downloads
 
-[**The current version of RYBA, the GUI input generater and output analyzer for ORCA can be found here!**](../assets/projects/RYBA/RYBA_1.15.2.html)
-The up to date version is 1.5.2.
+The up to date version of RYBA (1.25.0).
+[**Version for Windows 10 and windows 11**](../assets/projects/RYBA/Windows/RYBA_1.25.0.exe)
+[**Version for Linux**](../assets/projects/RYBA/Linux/RYBA_1.25.0_amd64.deb)
+
+
+
+
+
+
+The old published version 1.15.2 available as html file: 
+(../assets/projects/RYBA/RYBA_1.15.2.html)
