@@ -17,7 +17,7 @@ RYBA can finally draw molecules! One of the thing missing in RYBA for a long tim
 When new molecule is to be created, you can select from a plethora of predefined scaffold such as benzene ring, heteroaromatic compounds or a humble alkyl chain of your desired lenghth. The molecular workshop allows for ataching or modyfing individual atoms but it also contains a list of common funtional groups which can be attached to an atom or replace it in a similar fashion.
 
 
-![Methods input](../assets/projects/RYBA/blog_geometry/workshop1.png "Selection of job types and methods.")
+![Geometry workshop](../assets/projects/RYBA/blog_geometry/workshop1.png "Example of molecule drawing in RYBA.")
 
 
 And it is not just a basic drawing tool. It has several nice features. The most important being implemented force field (MMFF94) for optimization of drawed molecules and thus shortening your actuall optimization run in ORCA. Besides that, the workshop can verify basic features like missmatch between spin and the molecular composition or overlaping atoms. 
