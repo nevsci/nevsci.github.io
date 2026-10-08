@@ -2,9 +2,7 @@
 layout: post
 title: RYBA can finally draw its own molecules!
 subtitle: A dedicated workshop for constraction of molecules and force field optimization has been added
-#cover-img: ../assets/projects/RYBA/Background.png
 thumbnail-img: ../assets/projects/RYBA/LOGO.png
-#share-img: #/assets/img/path.jpg
 tags: [RYBA, ORCA, software, computational chemistry, tutorial, drawing, force field]
 author: Tomáš
 ---
