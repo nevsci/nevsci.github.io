@@ -11,5 +11,7 @@ permalink: /downloads/
 
 
 **version for Linux (Ubuntu 24.04 and compatible systems):**
-*Installer* [**RYBA_1.26.0_amd64.deb**](../assets/projects/RYBA/Linux/RYBA_1.26.0_amd64.deb) 
+*Installer* [**RYBA_1.26.0_amd64.deb**](../assets/projects/RYBA/Linux/RYBA_1.26.0_amd64.deb)
+
+
 *Self-contained package* [**RYBA_1.26.0_amd64.AppImage**](../assets/projects/RYBA/Linux/RYBA_1.26.0_amd64.AppImage)
