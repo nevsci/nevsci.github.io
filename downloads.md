@@ -19,4 +19,5 @@ permalink: /downloads/
 
 
 **version for macOS (macOS 13.0 and higher):**
+
 -*Self-contained package* [**RYBA_1.26.0_macos-universal.app.zip**](../assets/projects/RYBA/MacOS/RYBA_1.26.0_macos-universal.app.zip)
