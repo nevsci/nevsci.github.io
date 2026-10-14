@@ -6,9 +6,9 @@ permalink: /downloads/
 
 ## The latest version of RYBA
 
-**version for Windows (64 bit), executable without installation:**
+**version for Windows (64 bit):**
 
--[**RYBA_1.26.0.exe**](../assets/projects/RYBA/Windows/RYBA_1.26.0.exe)
+-*executable without installation* [**RYBA_1.26.0.exe**](../assets/projects/RYBA/Windows/RYBA_1.26.0.exe)
 
 
 **version for Linux (Ubuntu 24.04 and compatible systems):**
