@@ -15,3 +15,7 @@ permalink: /downloads/
 
 
 *Self-contained package* [**RYBA_1.26.0_amd64.AppImage**](../assets/projects/RYBA/Linux/RYBA_1.26.0_amd64.AppImage)
+
+
+**version for MacOS (Ubuntu 24.04 and compatible systems):**
+*Self-contained package* [**RYBA_1.26.0_macos-universal.app.zip**](../assets/projects/RYBA/MacOS/RYBA_1.26.0_macos-universal.app.zip)
