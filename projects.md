@@ -36,6 +36,14 @@ The most important part is to attach LEDS symmetrically so all the vials are get
 
 </details>
 
+
+<details class="project" markdown="1">
+<summary><strong>Improved modular photoreactor</strong></summary>
+
+#Comming soon!#
+
+</details>
+
 <details class="project" markdown="1">
 <summary><strong>Stand for NMR tubes</strong></summary>
 
