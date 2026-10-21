@@ -22,7 +22,7 @@ author: Tomáš Neveselý
 navbar-links:
   About Me: "aboutme"
   Projects: "projects"
-  Publications: "publications"
+  RYBA: "https://ryba.nevesely.science/"
   Downloads: "downloads"
   Blog: "blog"
   #Resources:    - Beautiful Jekyll: "https://beautifuljekyll.com"cust
