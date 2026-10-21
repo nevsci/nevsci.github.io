@@ -16,7 +16,7 @@ Perhaps unsurprisingly my affinity to chemistry didn’t start at school but rat
 ## Publications
 
 <details class="project" markdown="1">
-<summary><strong>Small modular photoreactor</strong></summary>
+<summary><strong>The short list of results from the long hours in the lab</strong></summary>
 
 <ul class="list-unstyled">
 {% for pub in site.data.publications %}
