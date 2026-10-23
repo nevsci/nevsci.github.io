@@ -1,18 +1,17 @@
 name: Beautiful Jekyll CI
-on: [push, pull_request]
+on:
+  push:
+    branches: [master, prepare-ryba-1.34.0-downloads]
+  pull_request:
+    branches: [master]
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 jobs:
   build:
     name: Build Jekyll
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
@@ -31,10 +30,25 @@ jobs:
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build --future --config _config_ci.yml,_config.yml
-      - name: Upload artifact
+      - name: Upload Pages artifact
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         uses: actions/upload-pages-artifact@v3
         with:
           path: './_site'
+
+  deploy:
+    name: Deploy GitHub Pages
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
