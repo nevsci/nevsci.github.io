@@ -20,21 +20,20 @@ permalink: /downloads/
 
 - *Universal app (Intel and Apple Silicon):* [**RYBA_1.39.0_macos-universal.app.zip**](../assets/projects/RYBA/MacOS/RYBA_1.39.0_macos-universal.app.zip){: data-goatcounter-click="download-ryba-1.39.0-macos-universal" data-goatcounter-title="RYBA 1.39.0 macOS universal ZIP" data-goatcounter-no-session="1" data-goatcounter-referrer="https://nevesely.science/downloads/" }
 
+[Verify downloads: SHA-256 checksums](../assets/projects/RYBA/RYBA_1.39.0_SHA256SUMS.txt)
+
 ## Older RYBA versions
 
 Version numbers may skip intermediate builds because only tested releases are published.
 
 **RYBA 1.34.0**
 
-- Windows: [RYBA_1.34.0_x64-setup.exe](../assets/projects/RYBA/Windows/RYBA_1.34.0_x64-setup.exe){: data-goatcounter-click="download-ryba-1.34.0-windows-setup" data-goatcounter-title="RYBA 1.34.0 Windows EXE" data-goatcounter-no-session="1" data-goatcounter-referrer="https://nevesely.science/downloads/" }
-- Windows: [RYBA_1.34.0_windows-x86_64_portable.exe](../assets/projects/RYBA/Windows/RYBA_1.34.0_windows-x86_64_portable.exe){: data-goatcounter-click="download-ryba-1.34.0-windows-portable" data-goatcounter-title="RYBA 1.34.0 Windows EXE" data-goatcounter-no-session="1" data-goatcounter-referrer="https://nevesely.science/downloads/" }
-- Linux: [RYBA_1.34.0_amd64.deb](../assets/projects/RYBA/Linux/RYBA_1.34.0_amd64.deb){: data-goatcounter-click="download-ryba-1.34.0-linux-deb" data-goatcounter-title="RYBA 1.34.0 Linux DEB" data-goatcounter-no-session="1" data-goatcounter-referrer="https://nevesely.science/downloads/" }
-- Linux: [RYBA_1.34.0_amd64.AppImage](../assets/projects/RYBA/Linux/RYBA_1.34.0_amd64.AppImage){: data-goatcounter-click="download-ryba-1.34.0-linux-appimage" data-goatcounter-title="RYBA 1.34.0 Linux AppImage" data-goatcounter-no-session="1" data-goatcounter-referrer="https://nevesely.science/downloads/" }
+- Windows: [Setup: RYBA_1.34.0_x64-setup.exe](../assets/projects/RYBA/Windows/RYBA_1.34.0_x64-setup.exe){: data-goatcounter-click="download-ryba-1.34.0-windows-setup" data-goatcounter-title="RYBA 1.34.0 Windows EXE" data-goatcounter-no-session="1" data-goatcounter-referrer="https://nevesely.science/downloads/" } · [Portable: RYBA_1.34.0_windows-x86_64_portable.exe](../assets/projects/RYBA/Windows/RYBA_1.34.0_windows-x86_64_portable.exe){: data-goatcounter-click="download-ryba-1.34.0-windows-portable" data-goatcounter-title="RYBA 1.34.0 Windows EXE" data-goatcounter-no-session="1" data-goatcounter-referrer="https://nevesely.science/downloads/" }
+- Linux: [RYBA_1.34.0_amd64.deb](../assets/projects/RYBA/Linux/RYBA_1.34.0_amd64.deb){: data-goatcounter-click="download-ryba-1.34.0-linux-deb" data-goatcounter-title="RYBA 1.34.0 Linux DEB" data-goatcounter-no-session="1" data-goatcounter-referrer="https://nevesely.science/downloads/" } · [RYBA_1.34.0_amd64.AppImage](../assets/projects/RYBA/Linux/RYBA_1.34.0_amd64.AppImage){: data-goatcounter-click="download-ryba-1.34.0-linux-appimage" data-goatcounter-title="RYBA 1.34.0 Linux AppImage" data-goatcounter-no-session="1" data-goatcounter-referrer="https://nevesely.science/downloads/" }
 - macOS: [RYBA_1.34.0_macos-universal.app.zip](../assets/projects/RYBA/MacOS/RYBA_1.34.0_macos-universal.app.zip){: data-goatcounter-click="download-ryba-1.34.0-macos-universal" data-goatcounter-title="RYBA 1.34.0 macOS universal ZIP" data-goatcounter-no-session="1" data-goatcounter-referrer="https://nevesely.science/downloads/" }
-- macOS: [RYBA_1.39.0_SHA256SUMS.txt](../assets/projects/RYBA/RYBA_1.39.0_SHA256SUMS.txt){: data-goatcounter-click="download-ryba-1.34.0-macos-universal" data-goatcounter-title="RYBA 1.34.0 macOS universal ZIP" data-goatcounter-no-session="1" data-goatcounter-referrer="https://nevesely.science/downloads/" }
 
 **RYBA 1.26.0**
 
-- Windows: [RYBA_1.26.0.exe](../assets/projects/RYBA/Windows/RYBA_1.26.0.exe){: data-goatcounter-click="download-ryba-1.26.0-windows-exe" data-goatcounter-title="RYBA 1.26.0 Windows EXE" data-goatcounter-no-session="1" }
+- Windows: [Portable: RYBA_1.26.0.exe](../assets/projects/RYBA/Windows/RYBA_1.26.0.exe){: data-goatcounter-click="download-ryba-1.26.0-windows-exe" data-goatcounter-title="RYBA 1.26.0 Windows EXE" data-goatcounter-no-session="1" }
 - Linux: [RYBA_1.26.0_amd64.deb](../assets/projects/RYBA/Linux/RYBA_1.26.0_amd64.deb){: data-goatcounter-click="download-ryba-1.26.0-linux-deb" data-goatcounter-title="RYBA 1.26.0 Linux DEB" data-goatcounter-no-session="1" } · [RYBA_1.26.0_amd64.AppImage](../assets/projects/RYBA/Linux/RYBA_1.26.0_amd64.AppImage){: data-goatcounter-click="download-ryba-1.26.0-linux-appimage" data-goatcounter-title="RYBA 1.26.0 Linux AppImage" data-goatcounter-no-session="1" }
 - macOS: [RYBA_1.26.0_macos-universal.app.zip](../assets/projects/RYBA/MacOS/RYBA_1.26.0_macos-universal.app.zip){: data-goatcounter-click="download-ryba-1.26.0-macos-universal" data-goatcounter-title="RYBA 1.26.0 macOS universal ZIP" data-goatcounter-no-session="1" }
