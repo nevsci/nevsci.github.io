@@ -6,6 +6,8 @@ permalink: /downloads/
 
 ## The latest version of RYBA
 
+> **Getting ready for ORCA 7.** RYBA 1.40 adds an ORCA 7 Preview target with version-aware input checks. We’ll verify compatibility against the released ORCA 7 executable and its output files.
+
 **Windows (64-bit):**
 
 - *Standard installer:* [**RYBA_1.39.1_x64-setup.exe**](../assets/projects/RYBA/Windows/RYBA_1.39.1_x64-setup.exe){: data-goatcounter-click="download-ryba-1.39.1-windows-setup" data-goatcounter-title="RYBA 1.39.1 Windows Installer" data-goatcounter-no-session="1" data-goatcounter-referrer="https://nevesely.science/downloads/" }
