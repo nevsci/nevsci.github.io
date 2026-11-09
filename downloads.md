@@ -4,9 +4,9 @@ title: Downloads
 permalink: /downloads/
 ---
 
-## The latest version of RYBA
-
 > **Getting ready for ORCA 7.** RYBA 1.40 adds an ORCA 7 Preview target with version-aware input checks. We’ll verify compatibility against the released ORCA 7 executable and its output files.
+
+## The latest version of RYBA
 
 **Windows (64-bit):**
 
