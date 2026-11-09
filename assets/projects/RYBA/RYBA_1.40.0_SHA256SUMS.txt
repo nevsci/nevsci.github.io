@@ -1,0 +1,5 @@
+065b6af8d34f0422aae639fdb478a0bf7102f47a98f0826c8a419652bf7a0566  Windows/RYBA_1.40.0_x64-setup.exe
+a25793b4adba253b083095fd9323511f3e1b00a7b29ee52f96ed8f54bbdb8827  Windows/RYBA_1.40.0_windows-x86_64_portable.exe
+66ca5dafd53e7f1e7f17d37898534d13f147f49355bb782f0aafcf25bb049541  Linux/RYBA_1.40.0_amd64.deb
+1c48732351ff13b6418f9bdfe44181a1e7e92f614e97367d137992dfc35cfdee  Linux/RYBA_1.40.0_amd64.AppImage
+858fe8fb261491d7a3f194bdf547f1e2a8379cbd348aba947c5ccd0c93f93e48  MacOS/RYBA_1.40.0_macos-universal.app.zip
